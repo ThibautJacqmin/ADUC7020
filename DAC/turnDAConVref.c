@@ -3,7 +3,7 @@
 // Turn on DAC with range from 0V to internal voltage
 // reference of the chip (2.5 V)
 
-void turnDACon(int DACindex)
+void turnDAConExtRef(int DACindex)
 {
 	if (DACindex == 0){
 		DAC0CON = 0x12;	// AGND-ARef range 2.5V

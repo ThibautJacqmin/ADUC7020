@@ -4,7 +4,7 @@
 // Use internal crystal at 32.768 kHz to drive the PLL clock
 // Choose the frequency (label 1 to 7)
 
-void SetClock(int freq)
+void SetClockExt(int freq)
 {
 
 int t2val_old;
@@ -38,13 +38,13 @@ int t2val_old;
 			case 5:
 			POWCON = 0x24; // 2.61 MHz
 			break;
-			case 5:
+			case 6:
 			POWCON = 0x25; // 1.31 MHz
 			break;
-			case 6:
+			case 7:
 			POWCON = 0x26; // 653 kHz
 			break;
-			case 7:
+			case 8:
 			POWCON = 0x27; // 326 kHz
 			break;
 	}

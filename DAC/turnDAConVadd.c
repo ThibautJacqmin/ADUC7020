@@ -3,7 +3,7 @@
 // Turn on DAC with range from 0V to AVdd = 3.3 V
 // By using DACiCON = 0x13;
 
-void turnDACon(int DACindex)
+void turnDAConIntRef(int DACindex)
 {
 	if (DACindex == 0){
 		DAC0CON = 0x13;	// AGND-AVdd range 3.3 V
